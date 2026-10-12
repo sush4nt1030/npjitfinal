@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Opportunities · NISC</title>
+<meta name="description" content="Verified internships, jobs, scholarships, hackathons, competitions, workshops and volunteering opportunities for students, shared by NISC.">
+<meta name="theme-color" content="#F5F9FF">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NISC · Nepalgunj IT Students Community">
+<meta property="og:title" content="Opportunities · NISC">
+<meta property="og:description" content="Verified internships, jobs, scholarships, hackathons, competitions, workshops and volunteering opportunities for students, shared by NISC.">
+<!-- After deployment, replace with the absolute URL, e.g. https://your-domain/assets/img/brand/og-image.jpg -->
+<meta property="og:image" content="../assets/img/brand/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="NISC logo with the words Learn. Connect. Build. Grow.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/brand/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/img/brand/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
+<script>try{var t=localStorage.getItem('nisc-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script src="../assets/js/data/site.js" defer></script>
+<script src="../assets/js/data/opportunities.js" defer></script>
+<script src="../assets/js/icons.js" defer></script>
+<script src="../assets/js/core.js" defer></script>
+<script src="../assets/js/ui.js" defer></script>
+<script src="../assets/js/pages/opportunities.js" defer></script>
+
+</head>
+<body data-section="opportunities" data-page="opportunities" data-path="opportunities/index.html">
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header" id="site-header"><noscript><div class="container nav-bar"><a class="brand" href="../index.html"><img class="brand__logo" src="../assets/img/brand/nisc-logo-480.png" alt="NISC home" width="480" height="253"></a><nav aria-label="Primary" style="margin-left:auto;display:flex;flex-wrap:wrap;gap:14px;font-weight:600"><a href="../discover/index.html">Discover</a><a href="../events/index.html">Events</a><a href="../community/index.html">Community</a><a href="../opportunities/index.html">Opportunities</a><a href="../resources/index.html">Resources</a><a href="../team/index.html">Team</a><a href="../gallery/index.html">Gallery</a><a href="../join.html">Join NISC</a></nav></div></noscript></header>
+<main id="main" tabindex="-1">
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__inner">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="../index.html">Home</a></li><li aria-current="page">Opportunities</li></ol></nav>
+        <span class="eyebrow">Opportunities hub</span>
+        <h1 class="page-hero__title">Opportunities <span class="gradient-text">for students</span></h1>
+        <p class="page-hero__lead">Internships, jobs, scholarships, hackathons, competitions, workshops, bootcamps, fellowships and volunteering. Every listing is checked by the NISC team before it&rsquo;s published.</p>
+        <div class="page-hero__actions"><a class="btn btn--secondary" href="../contact.html?topic=opportunity"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-plus"></use></svg>Share an opportunity</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="notice notice--success" style="margin-bottom:24px"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-shield"></use></svg><div><strong>Verified before publishing</strong><p>We confirm every opportunity on the organiser&rsquo;s official page and note who checked it. Still, always read the official details before you apply, and never pay anyone to apply for an opportunity.</p></div></div>
+
+      <div class="toolbar" role="search" aria-label="Filter opportunities">
+        <div class="toolbar__row">
+          <label class="search-field"><span class="sr-only">Search opportunities</span><svg class="i" aria-hidden="true" focusable="false"><use href="#i-search"></use></svg><input type="search" id="opps-search" placeholder="Search by title, organisation or eligibility" autocomplete="off"></label>
+          <div class="cluster">
+            <label class="check" style="font-size:.9rem"><input type="checkbox" id="opps-closed">Show closed</label>
+            <span class="result-count" id="opps-count" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="toolbar__row"><div class="chip-group" id="opps-types" role="group" aria-label="Opportunity type"></div></div>
+      </div>
+      <div class="stack" id="opps-grid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="section section--alt section--grid">
+    <div class="container">
+      <div class="section-head"><div class="section-head__text"><span class="eyebrow">Before you apply</span><h2>Four habits of successful applicants</h2></div></div>
+      <div class="grid grid--4" data-reveal-stagger>
+        <div class="card card--pad" data-reveal><span class="icon-tile"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-clock"></use></svg></span><h3>Start early</h3><p class="text-2">Deadlines are shown in Nepal Time. Aim to submit a few days before.</p></div>
+        <div class="card card--pad" data-reveal><span class="icon-tile"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-file"></use></svg></span><h3>Read everything</h3><p class="text-2">Check eligibility and required documents on the official page first.</p></div>
+        <div class="card card--pad" data-reveal><span class="icon-tile"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-briefcase"></use></svg></span><h3>Prepare your CV</h3><p class="text-2">Use the <a href="../resources/resource.html?id=tih-resume">resume guide</a> in the Learning Hub.</p></div>
+        <div class="card card--pad" data-reveal><span class="icon-tile"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-users"></use></svg></span><h3>Ask for a review</h3><p class="text-2">Another NISC member can spot what you missed.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer" id="site-footer"></footer>
+</body>
+</html>

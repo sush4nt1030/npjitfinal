@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Projects · NISC</title>
+<meta name="description" content="Real projects built by NISC members: the problem, the solution, the team, the technologies and what they learned.">
+<meta name="theme-color" content="#F5F9FF">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NISC · Nepalgunj IT Students Community">
+<meta property="og:title" content="Projects · NISC">
+<meta property="og:description" content="Real projects built by NISC members: the problem, the solution, the team, the technologies and what they learned.">
+<!-- After deployment, replace with the absolute URL, e.g. https://your-domain/assets/img/brand/og-image.jpg -->
+<meta property="og:image" content="../assets/img/brand/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="NISC logo with the words Learn. Connect. Build. Grow.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/brand/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/img/brand/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
+<script>try{var t=localStorage.getItem('nisc-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script src="../assets/js/data/site.js" defer></script>
+<script src="../assets/js/data/projects.js" defer></script>
+<script src="../assets/js/icons.js" defer></script>
+<script src="../assets/js/core.js" defer></script>
+<script src="../assets/js/ui.js" defer></script>
+<script src="../assets/js/pages/projects.js" defer></script>
+
+</head>
+<body data-section="community" data-page="projects" data-path="projects/index.html">
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header" id="site-header"><noscript><div class="container nav-bar"><a class="brand" href="../index.html"><img class="brand__logo" src="../assets/img/brand/nisc-logo-480.png" alt="NISC home" width="480" height="253"></a><nav aria-label="Primary" style="margin-left:auto;display:flex;flex-wrap:wrap;gap:14px;font-weight:600"><a href="../discover/index.html">Discover</a><a href="../events/index.html">Events</a><a href="../community/index.html">Community</a><a href="../opportunities/index.html">Opportunities</a><a href="../resources/index.html">Resources</a><a href="../team/index.html">Team</a><a href="../gallery/index.html">Gallery</a><a href="../join.html">Join NISC</a></nav></div></noscript></header>
+<main id="main" tabindex="-1">
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__inner">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="../index.html">Home</a></li><li><a href="../community/index.html">Community</a></li><li aria-current="page">Projects</li></ol></nav>
+        <span class="eyebrow">Projects showcase</span>
+        <h1 class="page-hero__title">Built by <span class="gradient-text">NISC members</span></h1>
+        <p class="page-hero__lead">Real projects from the community. Each one shows the problem it solves, how it works, who built it, and what the team learned along the way.</p>
+        <div class="page-hero__actions"><a class="btn btn--primary" href="../contact.html?topic=project"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-plus"></use></svg>Submit your project</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="toolbar" role="search" aria-label="Filter projects">
+        <div class="toolbar__row">
+          <label class="search-field"><span class="sr-only">Search projects</span><svg class="i" aria-hidden="true" focusable="false"><use href="#i-search"></use></svg><input type="search" id="projects-search" placeholder="Search projects, technologies or people" autocomplete="off"></label>
+          <span class="result-count" id="projects-count" aria-live="polite"></span>
+        </div>
+        <div class="toolbar__row"><div class="chip-group" id="projects-cats" role="group" aria-label="Category"></div></div>
+        <div class="toolbar__row"><span class="toolbar__label">Technology</span><div class="chip-group" id="projects-tech" role="group" aria-label="Technology" style="flex:1"></div></div>
+      </div>
+      <div class="grid grid--3" id="projects-grid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="section section--alt section--grid">
+    <div class="container">
+      <div class="section-head"><div class="section-head__text"><span class="eyebrow">Get featured</span><h2>How to add your project</h2></div></div>
+      <ol class="steps" role="list">
+        <li><h3>Build it</h3><p>Alone or with other NISC members. Any size counts, from a small tool to a full app.</p></li>
+        <li><h3>Document it</h3><p>Write a short README, take a few screenshots, and note what you learned.</p></li>
+        <li><h3>Send it</h3><p>Share the details through the contact form. The team checks it with you.</p></li>
+        <li><h3>Get featured</h3><p>Your project gets its own page here, linked to your profile and the events it came from.</p></li>
+      </ol>
+      <div class="cluster mt-md"><a class="btn btn--primary" href="../contact.html?topic=project">Submit your project <svg class="i i--arrow" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></a></div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer" id="site-footer"></footer>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Register · NISC</title>
+<meta name="description" content="Register for a NISC event. Free, quick, and WhatsApp-first so you never miss an update.">
+<meta name="theme-color" content="#F5F9FF">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NISC · Nepalgunj IT Students Community">
+<meta property="og:title" content="Register · NISC">
+<meta property="og:description" content="Register for a NISC event. Free, quick, and WhatsApp-first so you never miss an update.">
+<!-- After deployment, replace with the absolute URL, e.g. https://your-domain/assets/img/brand/og-image.jpg -->
+<meta property="og:image" content="../assets/img/brand/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="NISC logo with the words Learn. Connect. Build. Grow.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/brand/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/img/brand/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
+<script>try{var t=localStorage.getItem('nisc-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script src="../assets/js/data/site.js" defer></script>
+<script src="../assets/js/data/events.js" defer></script>
+<script src="../assets/js/icons.js" defer></script>
+<script src="../assets/js/core.js" defer></script>
+<script src="../assets/js/ui.js" defer></script>
+<script src="../assets/js/forms.js" defer></script>
+<script src="../assets/js/pages/register.js" defer></script>
+
+</head>
+<body data-section="events" data-page="register" data-path="events/register.html">
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header" id="site-header"><noscript><div class="container nav-bar"><a class="brand" href="../index.html"><img class="brand__logo" src="../assets/img/brand/nisc-logo-480.png" alt="NISC home" width="480" height="253"></a><nav aria-label="Primary" style="margin-left:auto;display:flex;flex-wrap:wrap;gap:14px;font-weight:600"><a href="../discover/index.html">Discover</a><a href="../events/index.html">Events</a><a href="../community/index.html">Community</a><a href="../opportunities/index.html">Opportunities</a><a href="../resources/index.html">Resources</a><a href="../team/index.html">Team</a><a href="../gallery/index.html">Gallery</a><a href="../join.html">Join NISC</a></nav></div></noscript></header>
+<main id="main" tabindex="-1">
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__inner">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="../index.html">Home</a></li><li><a href="../events/index.html">Events</a></li><li hidden><a href="../events/index.html" data-crumb-event>Event</a></li><li aria-current="page">Register</li></ol></nav>
+        <span class="eyebrow">Event registration</span>
+        <h1 class="page-hero__title">Register for an event</h1>
+        <p class="page-hero__lead">It takes about two minutes. We&rsquo;ll use WhatsApp to share reminders and updates about the event.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div id="reg-state" aria-live="polite">
+        <noscript><p class="notice">Registration needs JavaScript. Please enable it, or contact the NISC team.</p></noscript>
+      </div>
+
+      <div class="split split--rev" id="reg-layout" hidden>
+        <aside class="sticky-aside" id="reg-summary" aria-label="Event summary"></aside>
+
+        <div class="form-card" data-form-host>
+          <form class="form" id="registration-form" data-form="registration" data-manual novalidate aria-labelledby="reg-form-title">
+            <div>
+              <h2 id="reg-form-title" style="font-size:var(--fs-xl)">Your registration</h2>
+              <p class="muted" style="margin-top:6px">Fields marked <span class="req" style="color:var(--danger)">*</span> are required.</p>
+            </div>
+
+            <div class="notice notice--danger form-errors" role="alert" tabindex="-1"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-alert"></use></svg><div><strong>Please check the form.</strong><p data-error-count></p></div></div>
+            <div class="notice notice--danger form-fail" role="alert" tabindex="-1" hidden><svg class="i" aria-hidden="true" focusable="false"><use href="#i-alert"></use></svg><div><strong>Your registration couldn&rsquo;t be sent.</strong><p>Check your internet connection and try again. If it keeps failing, contact the NISC team.</p></div></div>
+
+            <input type="hidden" name="event_id" value="">
+            <input type="hidden" name="event_name" value="" data-summary="Event">
+
+            <fieldset class="form-section">
+              <legend><span class="step">1</span>About you</legend>
+              <div class="field">
+                <label class="field__label" for="reg-name">Full name <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="reg-name" name="full_name" type="text" autocomplete="name" required minlength="3" maxlength="80" data-summary="Name" aria-describedby="reg-name-error">
+                <p class="field__error" id="reg-name-error"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-alert"></use></svg><span></span></p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="reg-email">Email address <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="reg-email" name="email" type="email" autocomplete="email" inputmode="email" required data-validate="email" data-summary="Email" placeholder="name@example.com" aria-describedby="reg-email-error">
+                <p class="field__error" id="reg-email-error"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-alert"></use></svg><span></span></p>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-section">
+              <legend><span class="step">2</span>How we&rsquo;ll reach you</legend>
+              <div class="field field--whatsapp">
+                <label class="field__label" for="reg-whatsapp">WhatsApp number <span class="req" aria-hidden="true">*</span> <span class="wa-badge"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-whatsapp"></use></svg>Main channel</span></label>
+                <p class="field__hint" id="reg-whatsapp-hint">Reminders, venue details and last-minute changes are shared on WhatsApp. Please use a number that has WhatsApp.</p>
+                <div class="input-group">
+                  <span class="input-group__prefix" aria-hidden="true"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-whatsapp"></use></svg></span>
+                  <input class="input" id="reg-whatsapp" name="whatsapp" type="tel" autocomplete="tel" inputmode="tel" required data-validate="phone" data-summary="WhatsApp" placeholder="98XXXXXXXX" aria-describedby="reg-whatsapp-hint reg-whatsapp-error">
+                </div>
+                <p class="field__error" id="reg-whatsapp-error"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-alert"></use></svg><span></span></p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="reg-phone">Phone number <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="reg-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required data-validate="phone" placeholder="98XXXXXXXX" aria-describedby="reg-phone-error">
+                <label class="check" style="font-size:.88rem"><input type="checkbox" data-copy-from="reg-whatsapp" data-copy-to="reg-phone">Same as my WhatsApp number</label>
+                <p class="field__error" id="reg-phone-error"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-alert"></use></svg><span></span></p>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-section">
+              <legend><span class="step">3</span>Your studies</legend>
+              <div class="field">
+                <label class="field__label" for="reg-college">College / institution <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="reg-college" name="college" type="text" autocomplete="organization" required maxlength="120" data-summary="College" aria-describedby="reg-college-error">
+                <p class="field__error" id="reg-college-error"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-alert"></use></svg><span></span></p>
+              </div>
+              <div class="form-row">
+                <div class="field">
+                  <label class="field__label" for="reg-course">Course / faculty <span class="req" aria-hidden="true">*</span></label>
+                  <input class="input" id="reg-course" name="course" type="text" list="course-options" required maxlength="80" placeholder="e.g. BSc CSIT" aria-describedby="reg-course-error">
+                  <datalist id="course-options">
+                    <option value="BSc CSIT"></option><option value="BCA"></option><option value="BIT"></option><option value="BIM"></option>
+                    <option value="BE Computer / IT"></option><option value="BBA / BBS"></option><option value="+2 Science"></option>
+                    <option value="+2 Management"></option><option value="+2 Humanities / Education"></option><option value="Diploma in Computer Engineering"></option>
+                  </datalist>
+                  <p class="field__error" id="reg-course-error"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-alert"></use></svg><span></span></p>
+                </div>
+                <div class="field">
+                  <label class="field__label" for="reg-level">Current level / semester <span class="req" aria-hidden="true">*</span></label>
+                  <select class="select" id="reg-level" name="level" required data-summary="Level" aria-describedby="reg-level-error">
+                    <option value="">Choose one</option>
+                    <optgroup label="+2"><option>Grade 11</option><option>Grade 12</option></optgroup>
+                    <optgroup label="Bachelor"><option>1st semester / 1st year</option><option>2nd semester</option><option>3rd semester / 2nd year</option><option>4th semester</option><option>5th semester / 3rd year</option><option>6th semester</option><option>7th semester / 4th year</option><option>8th semester</option></optgroup>
+                    <optgroup label="Other"><option>Graduated</option><option>Diploma</option><option>Other</option></optgroup>
+                  </select>
+                  <p class="field__error" id="reg-level-error"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-alert"></use></svg><span></span></p>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-section">
+              <legend><span class="step">4</span>Your motivation</legend>
+              <div class="field">
+                <label class="field__label" for="reg-why">Why do you want to join this session? <span class="req" aria-hidden="true">*</span></label>
+                <textarea class="textarea" id="reg-why" name="why_join" required minlength="20" maxlength="600" aria-describedby="reg-why-hint reg-why-error"></textarea>
+                <div class="cluster" style="justify-content:space-between"><p class="field__hint" id="reg-why-hint">A few honest sentences are perfect.</p><span class="char-count" aria-hidden="true"></span></div>
+                <p class="field__error" id="reg-why-error"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-alert"></use></svg><span></span></p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="reg-expect">What do you expect to learn? <span class="req" aria-hidden="true">*</span></label>
+                <textarea class="textarea" id="reg-expect" name="expectations" required minlength="10" maxlength="600" aria-describedby="reg-expect-hint reg-expect-error"></textarea>
+                <div class="cluster" style="justify-content:space-between"><p class="field__hint" id="reg-expect-hint">This helps speakers prepare for what you need.</p><span class="char-count" aria-hidden="true"></span></div>
+                <p class="field__error" id="reg-expect-error"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-alert"></use></svg><span></span></p>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-section" id="reg-profiles">
+              <legend><span class="step">5</span>Profiles <span class="opt" style="font-family:var(--font-body);font-size:.8rem;font-weight:500;color:var(--ink-3)">optional</span></legend>
+              <div class="form-row">
+                <div class="field">
+                  <label class="field__label" for="reg-linkedin">LinkedIn <span class="opt">optional</span></label>
+                  <input class="input" id="reg-linkedin" name="linkedin" type="url" inputmode="url" data-validate="linkedin" placeholder="https://linkedin.com/in/your-name" aria-describedby="reg-linkedin-error">
+                  <p class="field__error" id="reg-linkedin-error"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-alert"></use></svg><span></span></p>
+                </div>
+                <div class="field">
+                  <label class="field__label" for="reg-github">GitHub <span class="opt">optional</span></label>
+                  <input class="input" id="reg-github" name="github" type="text" data-validate="github" placeholder="username or profile link" aria-describedby="reg-github-error">
+                  <p class="field__error" id="reg-github-error"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-alert"></use></svg><span></span></p>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="check-field">
+              <label class="check"><input type="checkbox" name="consent" value="yes" required data-msg-required="Please agree before submitting."><span>I agree to follow the <a href="../code-of-conduct.html">NISC Code of Conduct</a> and understand how my information is used, as described in the <a href="../privacy-policy.html">Privacy Policy</a>.</span></label>
+              <p class="field__error"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-alert"></use></svg><span></span></p>
+            </div>
+
+            <div class="hp-field" aria-hidden="true"><label>Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+
+            <div class="form-actions">
+              <p>Your details are used only to organise this event and contact you about it.</p>
+              <button class="btn btn--primary btn--lg" type="submit">Submit registration <svg class="i i--arrow" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer" id="site-footer"></footer>
+</body>
+</html>
