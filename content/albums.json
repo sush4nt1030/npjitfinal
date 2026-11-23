@@ -1,0 +1,32 @@
+[
+  {
+    "id": "wordcamp-nepal-2027",
+    "title": "WordCamp Nepal 2027",
+    "event": "wordcamp-nepal-2027",
+    "dateText": "29–30 January 2027",
+    "description": "WordCamp Nepal 2027 is coming to Nepalgunj. Save the dates!"
+  },
+  {
+    "id": "team-nisc-2026",
+    "title": "Team NISC 2026",
+    "event": null,
+    "dateText": "2026",
+    "description": "The newest members of Team NISC: two admins and five leads."
+  },
+  {
+    "id": "session-02",
+    "title": "Session 02",
+    "event": "session-02",
+    "dateText": "N/A",
+    "description": "NISC’s second successfully completed session.",
+    "note": "These are illustrations of the session. Real event photos will be added here."
+  },
+  {
+    "id": "session-01",
+    "title": "Session 01",
+    "event": "session-01",
+    "dateText": "31 August 2025",
+    "description": "NISC’s first session, held on 31 August 2025, introducing the community and its goals.",
+    "note": "These are illustrations of the session. Real event photos will be added here."
+  }
+]

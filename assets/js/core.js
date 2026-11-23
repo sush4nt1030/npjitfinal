@@ -20,7 +20,11 @@
      ====================================================================== */
   N.url = function (p) {
     if (!p) return '';
-    if (/^(https?:|mailto:|tel:|#|data:|\/\/)/i.test(p)) return p;
+    p = String(p).trim();
+    if (/[\x00-\x1f]/u.test(p) || (/^[a-z][\w+.-]*:/i.test(p) && !/^(https?:|mailto:|tel:)/i.test(p))) return '';
+    p = p.replace(/[<>"']/g, function (c) { return '%' + c.charCodeAt(0).toString(16); });
+    if (p.indexOf('/assets/') === 0) p = p.slice(1);
+    if (/^(https?:|mailto:|tel:|#|\/\/)/i.test(p)) return p;
     return ROOT + p;
   };
   N.esc = function (s) {
@@ -121,19 +125,6 @@
   N.regOpen = function (e) { return !!(e.registration && e.registration.open) && N.eventStatus(e) !== 'completed'; };
   N.eventUrl = function (e) { return N.url('events/event.html?id=' + encodeURIComponent(e.id)); };
   N.findEvent = function (id) { return (N.events || []).filter(function (e) { return e.id === id; })[0]; };
-
-  /* ---------- Load data files on demand (search, cross-links) ---------- */
-  N.loadData = function (names) {
-    return Promise.all(names.map(function (n) {
-      if (N[n]) return Promise.resolve();
-      return new Promise(function (resolve) {
-        var s = doc.createElement('script');
-        s.src = ROOT + 'assets/js/data/' + n + '.js';
-        s.onload = s.onerror = function () { resolve(); };
-        doc.head.appendChild(s);
-      });
-    }));
-  };
 
   /* ======================================================================
      Theme
@@ -274,7 +265,7 @@
           col('Discover', [['What is NISC', 'discover/what-is-nisc.html'], ['Our Story', 'discover/our-story.html'], ['Our Journey', 'discover/our-journey.html'], ['Mission &amp; Vision', 'discover/mission-vision.html'], ['Our Values', 'discover/values.html'], ['Our Impact', 'discover/impact.html']]) +
           col('Take part', [['Events', 'events/index.html'], ['Register for an event', 'events/register.html'], ['Join NISC', 'join.html'], ['Volunteer', 'join.html#contribute'], ['Share a project', 'contact.html?topic=project'], ['Share an opportunity', 'contact.html?topic=opportunity']]) +
           col('Explore', [['Community', 'community/index.html'], ['Projects', 'projects/index.html'], ['Opportunities', 'opportunities/index.html'], ['Learning Hub', 'resources/index.html'], ['Student Stories', 'community/stories.html'], ['NISC Updates', 'updates/index.html'], ['Gallery', 'gallery/index.html'], ['Team', 'team/index.html']]) +
-          col('Help', [['FAQ', 'faq.html'], ['Contact', 'contact.html'], ['Search', 'search.html'], ['Code of Conduct', 'code-of-conduct.html'], ['Privacy Policy', 'privacy-policy.html']]) +
+          col('Help', [['FAQ', 'faq.html'], ['Contact', 'contact.html'], ['Search', 'search.html'], ['Code of Conduct', 'code-of-conduct.html'], ['Privacy Policy', 'privacy-policy.html'], ['Site admin', 'admin/']]) +
         '</div>' +
         '<p class="footer-word" aria-hidden="true">NISC</p>' +
         '<div class="footer-bottom">' +
@@ -733,6 +724,7 @@
       N.qs('[data-all-results]', overlay).href = ROOT + 'search.html' + (q ? '?q=' + encodeURIComponent(q) : '');
       if (!q) { suggestions(); return; }
       N.getIndex().then(function (index) {
+        if (input.value.trim() !== q) return;
         var res = N.search(q, index).slice(0, 14);
         if (!res.length) {
           results.innerHTML = '<div class="sr-empty"><p><strong>No results for “' + N.esc(q) + '”.</strong></p><p class="muted">Try a broader word like “events”, “web” or “join”.</p></div>';
@@ -756,6 +748,9 @@
         flat = N.qsa('.sr-item', results);
         active = 0;
         mark();
+      }).catch(function () {
+        results.textContent = 'Search could not load. Check your connection and try again.';
+        flat = []; active = -1; mark();
       });
     }
     function open() {
@@ -767,7 +762,6 @@
       input.value = '';
       suggestions();
       setTimeout(function () { input.focus(); }, 20);
-      N.getIndex();
     }
     function close() {
       if (!overlay || !overlay.parentNode) return;
@@ -792,7 +786,7 @@
   }
 
   /* ======================================================================
-     Fill site-wide values from site.js ([data-site], [data-site-stat])
+     Fill site-wide values from content/settings.json ([data-site], [data-site-stat])
      ====================================================================== */
   function fillSiteValues() {
     var s = N.site || {};
@@ -855,18 +849,15 @@
     var mq = matchMedia('(prefers-color-scheme: dark)');
     if (mq.addEventListener) mq.addEventListener('change', syncThemeMeta);
   }
-  doc.addEventListener('DOMContentLoaded', function () {
-    N.enhance(doc);
-    // Content rendered later (e.g. after a data file loads) must never stay hidden.
-    if ('MutationObserver' in window) {
-      var pending = false;
-      new MutationObserver(function () {
-        if (pending) return;
-        pending = true;
-        requestAnimationFrame(function () { pending = false; N.reveal(doc); });
-      }).observe(body, { childList: true, subtree: true });
-    }
-  });
+  // Bootstrap runs after the document is parsed. Observe later page and filter renders.
+  if ('MutationObserver' in window) {
+    var pending = false;
+    new MutationObserver(function () {
+      if (pending) return;
+      pending = true;
+      requestAnimationFrame(function () { pending = false; N.reveal(doc); });
+    }).observe(body, { childList: true, subtree: true });
+  }
   // Safety net: if anything is still hidden once the page has loaded, show it.
   window.addEventListener('load', function () {
     setTimeout(function () {

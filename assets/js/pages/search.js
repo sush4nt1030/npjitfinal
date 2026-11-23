@@ -39,5 +39,7 @@
   });
   document.getElementById('search-page-form').addEventListener('submit', function (e) { e.preventDefault(); run(); });
   input.addEventListener('input', N.debounce(run, 160));
-  N.getIndex().then(function (idx) { index = idx; run(); });
+  N.getIndex().then(function (idx) { index = idx; run(); }).catch(function () {
+    out.textContent = 'Search could not load. Check your connection and refresh the page.';
+  });
 })();

@@ -2,7 +2,7 @@
    NISC — forms.js
    Accessible validation + submission for the Registration, Join and
    Contact forms. Where a form sends its data is configured in
-   assets/js/data/site.js → NISC.site.forms.
+   content/settings.json → forms.
 
    Honesty rule: when no submission service is connected, the visitor is
    told clearly that nothing was sent. The site never pretends.
@@ -261,7 +261,5 @@
   }
 
   N.forms = { init: init, validate: validate };
-  document.addEventListener('DOMContentLoaded', function () {
-    N.qsa('form[data-form]:not([data-manual])').forEach(init);
-  });
+  N.qsa('form[data-form]:not([data-manual])').forEach(init);
 })();

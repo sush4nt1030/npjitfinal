@@ -103,6 +103,7 @@ NISC.ICONS = {
 };
 
 NISC.icon = function (name, cls) {
+  if (!Object.hasOwn(NISC.ICONS, name)) name = 'info';
   return '<svg class="i' + (cls ? ' ' + cls : '') + '" aria-hidden="true" focusable="false"><use href="#i-' + name + '"></use></svg>';
 };
 

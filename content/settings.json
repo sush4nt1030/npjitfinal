@@ -1,0 +1,48 @@
+{
+  "name": "Nepalgunj IT Students Community",
+  "short": "NISC",
+  "tagline": "Learn. Connect. Build. Grow.",
+  "location": "Nepalgunj, Banke, Lumbini Province, Nepal",
+  "founded": "18 November 2023",
+  "founders": "Sushant Budha and Bharat Rawal",
+  "website": "https://www.nepalgunjitcommunity.com",
+  "socialName": "Nepalgunj IT student’s community",
+  "email": "",
+  "phone": "",
+  "whatsappCommunity": "",
+  "meetingPlace": "",
+  "social": {
+    "facebook": "",
+    "instagram": "",
+    "linkedin": "",
+    "github": "",
+    "youtube": "",
+    "tiktok": ""
+  },
+  "stats": {
+    "sessionsCompleted": 2,
+    "members": null,
+    "studentsReached": null,
+    "projects": null,
+    "volunteers": null,
+    "collaborations": null
+  },
+  "showTemplates": false,
+  "forms": {
+    "registration": {
+      "provider": "none",
+      "endpoint": "",
+      "externalUrl": ""
+    },
+    "join": {
+      "provider": "none",
+      "endpoint": "",
+      "externalUrl": ""
+    },
+    "contact": {
+      "provider": "none",
+      "endpoint": "",
+      "externalUrl": ""
+    }
+  }
+}

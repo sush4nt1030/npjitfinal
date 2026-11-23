@@ -6,9 +6,9 @@
   // Known facts first; other numbers appear only once they are counted.
   s = Object.assign({ founded: 2023, teamMembers: (N.team && N.team.current || []).length || null, firstGroup: 291, projects: (N.projects || []).length || null }, s, { projects: s.projects != null ? s.projects : ((N.projects || []).length || null) });
   var DEF = [
-    ['sessionsCompleted', 'Sessions completed', 'book', 'NISC has successfully completed two sessions.'],
+    ['sessionsCompleted', 'Sessions completed', 'book', 'Learning sessions completed by the community.'],
     ['founded', 'Year founded', 'flag', 'NISC officially started on 18 November 2023.'],
-    ['teamMembers', 'Core team members', 'users', 'Two admins and five leads.'],
+    ['teamMembers', 'Core team members', 'users', 'Members of the current NISC team.'],
     ['firstGroup', 'Members in the first group', 'users', 'The first NISC group grew to around 291 members.'],
     ['members', 'Community members', 'users', 'Counted from the membership list.'],
     ['studentsReached', 'Students reached', 'megaphone', 'Across all events and activities.'],

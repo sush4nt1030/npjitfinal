@@ -26,7 +26,7 @@
     });
     return '<button type="button" class="masonry__item" data-i="' + i + '" aria-label="Open photo: ' + E(P(p.alt) || info.name) + '">' +
       '<img src="' + U(p.src) + '" alt="' + E(P(p.alt)) + '" loading="lazy"' + (p.w ? ' width="' + p.w + '" height="' + p.h + '"' : '') + '>' +
-      '<span class="masonry__cap"><strong>' + E(p.caption || info.name) + '</strong><span>' + E(info.name) + (p.illustration ? ' · Illustration' : (P(info.date) && info.date !== 'N/A' ? ' · ' + P(info.date) : '')) + '</span></span></button>';
+      '<span class="masonry__cap"><strong>' + E(p.caption || info.name) + '</strong><span>' + E(info.name) + (p.illustration ? ' · Illustration' : (P(info.date) && info.date !== 'N/A' ? ' · ' + E(P(info.date)) : '')) + '</span></span></button>';
   }
   function render(animate) {
     shown = [];

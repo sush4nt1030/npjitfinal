@@ -1,0 +1,74 @@
+[
+  {
+    "id": "admin",
+    "title": "Admin",
+    "icon": "shield",
+    "about": "The co-founders. They guide NISC, manage the team and keep the community’s website and groups running.",
+    "responsibilities": [
+      "Set NISC’s direction and priorities",
+      "Manage the team and new members",
+      "Run the website and community groups",
+      "Represent NISC with colleges and partners"
+    ]
+  },
+  {
+    "id": "tech-lead",
+    "title": "Tech Lead",
+    "icon": "code",
+    "about": "Leads technical content, member projects and NISC’s digital tools.",
+    "responsibilities": [
+      "Shape session and workshop content",
+      "Guide member projects and code quality",
+      "Maintain the NISC website",
+      "Curate the Learning Hub"
+    ]
+  },
+  {
+    "id": "community-lead",
+    "title": "Community Lead",
+    "icon": "compass",
+    "about": "Keeps members connected and makes every new student feel welcome.",
+    "responsibilities": [
+      "Welcome and onboard new members",
+      "Look after the community groups and channels",
+      "Bring students from different colleges together",
+      "Protect the Code of Conduct"
+    ]
+  },
+  {
+    "id": "content-design-lead",
+    "title": "Content / Design Lead",
+    "icon": "palette",
+    "about": "Owns how NISC looks: posters, social graphics and the visual identity.",
+    "responsibilities": [
+      "Design event posters and social graphics",
+      "Keep the NISC brand consistent",
+      "Document events with photos",
+      "Create visuals for the website"
+    ]
+  },
+  {
+    "id": "operations-events-lead",
+    "title": "Operations / Events Lead",
+    "icon": "calendar",
+    "about": "Plans and runs sessions, workshops and meetups from start to finish.",
+    "responsibilities": [
+      "Plan event calendars and logistics",
+      "Book venues and coordinate speakers",
+      "Manage registrations and attendance",
+      "Collect feedback after every event"
+    ]
+  },
+  {
+    "id": "content-editor",
+    "title": "Content Lead / Editor",
+    "icon": "edit",
+    "about": "Writes and edits what NISC publishes, so every message is clear and accurate.",
+    "responsibilities": [
+      "Write announcements and NISC Updates",
+      "Edit event recaps and stories",
+      "Check facts before anything is published",
+      "Keep the website content up to date"
+    ]
+  }
+]

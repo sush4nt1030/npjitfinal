@@ -1,0 +1,27 @@
+[
+  {
+    "id": "started",
+    "label": "Where We Started",
+    "blurb": "The idea, the first people, and the first conversations."
+  },
+  {
+    "id": "built",
+    "label": "What We Built",
+    "blurb": "A team, a community, and the first sessions."
+  },
+  {
+    "id": "learned",
+    "label": "What We Learned",
+    "blurb": "What running real activities taught us."
+  },
+  {
+    "id": "now",
+    "label": "Where We Are",
+    "blurb": "The community today."
+  },
+  {
+    "id": "next",
+    "label": "What’s Next",
+    "blurb": "The milestones we are working towards."
+  }
+]

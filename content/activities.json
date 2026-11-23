@@ -1,0 +1,218 @@
+[
+  {
+    "id": "learning-sessions",
+    "name": "Learning Sessions",
+    "icon": "book",
+    "summary": "Focused sessions where students explore one technology topic together, from the basics to practical examples.",
+    "gains": [
+      "A guided start on a topic before you study it alone",
+      "Answers to the questions you would otherwise search for hours",
+      "Notes and resources to keep learning afterwards"
+    ],
+    "links": [
+      {
+        "label": "Completed sessions",
+        "href": "events/index.html#completed"
+      },
+      {
+        "label": "Learning Hub",
+        "href": "resources/index.html"
+      }
+    ]
+  },
+  {
+    "id": "workshops",
+    "name": "Workshops",
+    "icon": "wrench",
+    "summary": "Hands-on workshops where you follow along on your own laptop and leave with something that works.",
+    "gains": [
+      "Practical skills you can use the same day",
+      "Experience with real tools, not just slides",
+      "A small finished piece of work"
+    ],
+    "links": [
+      {
+        "label": "Workshops",
+        "href": "events/index.html#workshop"
+      }
+    ]
+  },
+  {
+    "id": "meetups",
+    "name": "Meetups",
+    "icon": "coffee",
+    "summary": "Relaxed meetups to meet other students in Nepalgunj who care about technology.",
+    "gains": [
+      "Friends who share your interests",
+      "Study partners and teammates",
+      "A sense of what others are learning"
+    ],
+    "links": [
+      {
+        "label": "Meetups",
+        "href": "events/index.html#meetup"
+      }
+    ]
+  },
+  {
+    "id": "project-building",
+    "name": "Project Building",
+    "icon": "rocket",
+    "summary": "Small teams turning ideas into websites, apps, tools and experiments.",
+    "gains": [
+      "Portfolio work you can show",
+      "Teamwork and Git experience",
+      "The confidence of shipping something real"
+    ],
+    "links": [
+      {
+        "label": "Projects showcase",
+        "href": "projects/index.html"
+      }
+    ]
+  },
+  {
+    "id": "peer-learning",
+    "name": "Peer Learning",
+    "icon": "users",
+    "summary": "Students helping students: study circles, doubt sessions and friendly code reviews.",
+    "gains": [
+      "Faster progress when you are stuck",
+      "Deeper understanding by explaining to others",
+      "Accountability to keep going"
+    ],
+    "links": [
+      {
+        "label": "Join NISC",
+        "href": "join.html"
+      }
+    ]
+  },
+  {
+    "id": "networking",
+    "name": "Networking",
+    "icon": "network",
+    "summary": "Connections with seniors, alumni and people already working in technology.",
+    "gains": [
+      "People who can guide your next step",
+      "A clearer picture of the tech field",
+      "Introductions you would not get alone"
+    ],
+    "links": [
+      {
+        "label": "Community hub",
+        "href": "community/index.html"
+      }
+    ]
+  },
+  {
+    "id": "career-opportunities",
+    "name": "Career Opportunities",
+    "icon": "briefcase",
+    "summary": "Verified internships, jobs, scholarships and programmes collected in one place.",
+    "gains": [
+      "Opportunities you might otherwise miss",
+      "Clear eligibility and deadlines",
+      "Encouragement to actually apply"
+    ],
+    "links": [
+      {
+        "label": "Opportunities hub",
+        "href": "opportunities/index.html"
+      }
+    ]
+  },
+  {
+    "id": "competitions",
+    "name": "Competitions",
+    "icon": "trophy",
+    "summary": "Hackathons, coding contests and challenges, with help finding a team.",
+    "gains": [
+      "Skills tested under real pressure",
+      "Teammates and new friends",
+      "Experience worth putting on a CV"
+    ],
+    "links": [
+      {
+        "label": "Hackathons & competitions",
+        "href": "opportunities/index.html#hackathon"
+      }
+    ]
+  },
+  {
+    "id": "community-discussions",
+    "name": "Community Discussions",
+    "icon": "message",
+    "summary": "Open conversations about tools, trends, careers and the questions students actually have.",
+    "gains": [
+      "Different perspectives on the same problem",
+      "Practice explaining your ideas",
+      "Awareness of what is changing in tech"
+    ],
+    "links": [
+      {
+        "label": "NISC Updates",
+        "href": "updates/index.html"
+      }
+    ]
+  },
+  {
+    "id": "mentorship",
+    "name": "Mentorship",
+    "icon": "compass",
+    "summary": "Guidance on learning paths, projects and careers from people a few steps ahead.",
+    "gains": [
+      "A learning plan that fits you",
+      "Honest feedback on your work",
+      "Someone to ask when you are unsure"
+    ],
+    "links": [
+      {
+        "label": "Learning Hub",
+        "href": "resources/index.html"
+      }
+    ]
+  },
+  {
+    "id": "volunteering",
+    "name": "Volunteering",
+    "icon": "heart",
+    "summary": "Help run NISC: events, content, design, outreach and tech.",
+    "gains": [
+      "Leadership and event experience",
+      "Skills beyond coding",
+      "A bigger role in the community"
+    ],
+    "links": [
+      {
+        "label": "Ways to contribute",
+        "href": "join.html#contribute"
+      },
+      {
+        "label": "Meet the team",
+        "href": "team/index.html"
+      }
+    ]
+  },
+  {
+    "id": "student-collaboration",
+    "name": "Student Collaboration",
+    "icon": "handshake",
+    "summary": "Working across colleges, faculties and skills: developers, designers and future founders together.",
+    "gains": [
+      "Teams with complementary skills",
+      "Friends beyond your own college",
+      "Ideas that grow bigger together"
+    ],
+    "links": [
+      {
+        "label": "Community hub",
+        "href": "community/index.html"
+      },
+      {
+        "label": "Projects",
+        "href": "projects/index.html"
+      }
+    ]
+  }
+]

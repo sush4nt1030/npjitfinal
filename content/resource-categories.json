@@ -1,0 +1,52 @@
+[
+  {
+    "id": "web-development",
+    "name": "Web Development",
+    "icon": "globe"
+  },
+  {
+    "id": "programming",
+    "name": "Programming",
+    "icon": "code"
+  },
+  {
+    "id": "cybersecurity",
+    "name": "Cybersecurity",
+    "icon": "shield"
+  },
+  {
+    "id": "ai",
+    "name": "Artificial Intelligence",
+    "icon": "cpu"
+  },
+  {
+    "id": "ui-ux",
+    "name": "UI / UX Design",
+    "icon": "palette"
+  },
+  {
+    "id": "git-github",
+    "name": "Git & GitHub",
+    "icon": "git"
+  },
+  {
+    "id": "digital-skills",
+    "name": "Digital Skills",
+    "icon": "monitor"
+  },
+  {
+    "id": "career",
+    "name": "Career Development",
+    "icon": "briefcase"
+  },
+  {
+    "id": "interview",
+    "name": "Interview Preparation",
+    "icon": "message"
+  },
+  {
+    "id": "roadmaps",
+    "name": "Beginner Roadmaps",
+    "icon": "route"
+  }
+]
