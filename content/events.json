@@ -173,40 +173,5 @@
     "tags": [
       "session"
     ]
-  },
-  {
-    "title": "HackFest 2026",
-    "id": "hackfest2026",
-    "type": "competition",
-    "label": "",
-    "summary": "",
-    "topic": "",
-    "start": "2026-11-23T15:39:00+05:45",
-    "end": "2026-11-23T15:39:00+05:45",
-    "allDay": false,
-    "dateText": "",
-    "timeText": "",
-    "status": "upcoming",
-    "venue": "",
-    "venueMapUrl": "",
-    "organizer": "",
-    "banner": "/assets/img/01cb1e467574aeb6f85021f70b96bb26.jpg",
-    "poster": "/assets/img/01cb1e467574aeb6f85021f70b96bb26.jpg",
-    "posterAlt": "",
-    "website": null,
-    "description": [],
-    "purpose": "",
-    "audience": [],
-    "outcomes": [],
-    "agenda": [],
-    "speakers": [],
-    "registration": null,
-    "live": false,
-    "cancelled": false,
-    "highlights": [],
-    "feedback": [],
-    "faqs": [],
-    "milestone": "",
-    "tags": []
   }
 ]
