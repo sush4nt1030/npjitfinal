@@ -173,5 +173,56 @@
     "tags": [
       "session"
     ]
+  },
+  {
+    "title": "HackFest 2026 – Provincial Hackathon Banke",
+    "id": "hackfest-2026-provincial-hackathon-banke",
+    "type": "competition",
+    "label": "HackFest 2026",
+    "summary": "HackFest 2026 is a 36-hour team hackathon for +2 and bachelor’s students. Teams work on real-world challenges and present working demos. Nepalgunj IT Students Community (NISC) is a Community Partner.",
+    "topic": "Student innovation, teamwork, and technology prototyping",
+    "start": "",
+    "end": "",
+    "allDay": false,
+    "dateText": "24–26 December 2026",
+    "timeText": "36-hour hackathon",
+    "status": "upcoming",
+    "venue": "Lumbini Technological University, Nepalgunj, Banke, Nepal",
+    "venueMapUrl": "https://maps.app.goo.gl/F7TYVzaP5DwqQsti8",
+    "organizer": "Cyberium Technologies Pvt. Ltd.",
+    "banner": "/assets/img/hackfest.jpg",
+    "poster": "",
+    "posterAlt": "",
+    "website": {
+      "href": "",
+      "label": "https://hackfest.cyberiumtech.com.np/"
+    },
+    "description": [
+      "Participants can explore tracks including AI & Machine Learning, Web3 & Blockchain, Cybersecurity, FinTech, EdTech, and HealthTech. Nepalgunj IT Students Community (NISC) joins as a Community Partner, helping promote the event and connect local students and colleges with the opportunity to participate."
+    ],
+    "purpose": "HackFest 2026 – Provincial Hackathon Banke is a 36-hour team competition organised by Cyberium Technologies. It brings +2 and bachelor’s students together at Lumbini Technological University in Nepalgunj to tackle real-world problems, develop a prototype, and present a working demo.",
+    "audience": [],
+    "outcomes": [],
+    "agenda": [],
+    "speakers": [],
+    "registration": {
+      "open": false,
+      "deadlineText": "",
+      "seats": null,
+      "spotsLeft": null,
+      "full": false,
+      "note": ""
+    },
+    "live": false,
+    "cancelled": false,
+    "highlights": [
+      "6-hour team hackathon · Real-world challenges and working demos · Open to +2 and bachelor’s students · NISC joins as a Community Partner"
+    ],
+    "feedback": [],
+    "faqs": [],
+    "milestone": "",
+    "tags": [
+      "HackFest 2026, Provincial Hackathon Banke, Hackathon, Nepalgunj, Banke, NISC, Community Partner, Student Innovation, Cyberium Technologies"
+    ]
   }
 ]
